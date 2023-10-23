@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mind Meld</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet"> <!-- Caveat Font -->
+    <style>
+        body {
+            background: linear-gradient(to right, #1f4037, #99f2c8); /* Gradient background */
+            color: white; /* Text color */
+            display: flex; /* Align items side by side */
+            justify-content: center; /* Center items on the page */
+            align-items: center; /* Center items vertically */
+            height: 100vh; /* Full height */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            font-family: 'Caveat', cursive; /* Caveat Font */
+            flex-direction: column; /* Stack items vertically */
+        }
+        h1 {
+            font-size: 30px; /* Decreased font size */
+            text-decoration: underline; /* Underline text */
+            text-align: center; /* Center text */
+        }
+        .video-container {
+            width: 20%; /* Reduced size for YouTube shorts format */
+            height: 0;
+            padding-bottom: 35.5%; /* 9:16 Aspect Ratio for YouTube shorts format */
+            position: relative;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .facts-button, .subscribe-button {
+            display: inline-block;
+            background: linear-gradient(to right, blue, red); /* Gradient background */
+            color: white; /* Text color */
+            text-decoration: none; /* Remove underline */
+            padding: 20px 30px; /* Increase size */
+            border-radius: 50px; /* Rounded rectangle */
+            font-size: 25px; /* Increase font size */
+            margin-top: 20px; /* Space between the video and the button */
+        }
+        .channel-info {
+            background-color: rgba(255,255,255,0.5); /* Semi-transparent white background */
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 20px; /* Increase font size */
+        }
+    </style>
+</head>
+<body>
+    <h1>Mind Meld</h1> <!-- Channel Name -->
+
+    <div class="channel-info">
+        My Channel Provides You With Fact Related Videos, AI videos, Knowledgeable Videos, So Subscribe
+    </div>
+
+    <!-- Facts Videos Button -->
+    <a class="facts-button" href="Button.html" target="_blank">
+        Facts Videos
+    </a>
+
+    <!-- Subscribe Button -->
+    <a class="subscribe-button" href="https://www.youtube.com/channel/UCG8J2oQXmCyALqO3xHij1IQ?sub_confirmation=1" target="_blank">
+        Subscribe to our channel
+    </a>
+
+    <div class="video-container">
+        <!-- Embed YouTube Video -->
+        <iframe src="https://www.youtube.com/embed/LskMhOOxvog" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+</body>
+</html>
